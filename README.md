@@ -10,14 +10,14 @@
 
 <details>
 
-  <summary>The purpose of the Home Loan Wizard</summary> is to generate leads for the appropriate parties in the real estate market.  It will gather information about prospective customers, including contact ingormation, and route appropriately.
+  <summary>The purpose of the Home Loan Wizard...</summary> is to generate leads for the appropriate parties in the real estate market.  It will gather information about prospective customers, including contact ingormation, and route appropriately.
 
 </details>
 
 ### Scope
 
 <details>
-  The scope of the project is to create a gated form that will ask appropriate and applicable questions and then a back end that will send the lead to the designated parties.
+  <summary>The scope of the project is to create...</summary> a gated form that will ask appropriate and applicable questions and then a back end that will send the lead to the designated parties.
 </details>
 
 ## Description
@@ -25,19 +25,19 @@
 ### Interfaces
 
 <details>
-  An interface will need to be created to communicate between the form and the lenders' own systems, with all the information provided by the customer as well as a tag indicating the department for whom the report is intended.
+  <summary>An interface will need to be created...</summary> to communicate between the form and the lenders' own systems, with all the information provided by the customer as well as a tag indicating the department for whom the report is intended.
 </details>
 
 ### Environment
 
 <details>
-  The form is a web application that should also function completely in a mobile browser.  The latest versions (as of 10/5/17) of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
+  <summary>The form is a web application...</summary> that should also function completely in a mobile browser.  The latest versions (as of 10/5/17) of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
 </details>
 
 ### User Characteristics
 
 <details>
-  The typical user of this web form is expected to be an individual without much tech savvy, so the user interface should be very simple.
+  <summary>The typical user of this web form is expected...</summary> to be an individual without much tech savvy, so the user interface should be very simple.
 
   As for the user on the lenders' side, they will have lots of technical acumen, and the interface need only be developed to the standards they provided, sending the information they requested in the format provided.  They will take care of the rest.
 </details>
@@ -47,7 +47,7 @@
 ### External Interfaces
 
 <details>
-  The interface with the lenders' system should create an XML document that will be sent to an IP address and port that will be provided later.  However, the information should be in the following format:
+  <summary>The interface with the lenders' system...</summary> should create an XML document that will be sent to an IP address and port that will be provided later.  However, the information should be in the following format:
 
   ```xml
     <customer>
@@ -74,7 +74,8 @@
 ### Functions
 
 <details>
-  The form will be broken into several screens for ease of use.
+  <summary>The form will be broken into several screens for ease of use.<summary>
+
   1. The welcome screen
     * This screen will have the name of the wizard and a button to start the process of generating the lead.
   2. Loan and property type query screen
@@ -136,7 +137,7 @@
 ### Performance Requirements
 
 <details>
-  The page should load in no longer than 10 seconds, and page transitions should take no longer th an 5 seconds, with 5 and 2 being the targeted thresholds respectively.
+  <summary>The page should load...</summary> in no longer than 10 seconds, and page transitions should take no longer th an 5 seconds, with 5 and 2 being the targeted thresholds respectively.
 </details>
 
 ## Project Stakeholders
@@ -144,11 +145,12 @@
 ### Development
 
 <details>
-
-  ## Test
+  <summary>Team members</summary>
 
   Development Manager: Bob
+
   Developer: Jack
+
   Developer: Diane
 </details>
 
