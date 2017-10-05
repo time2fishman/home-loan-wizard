@@ -6,9 +6,9 @@ class NextBtn extends Component {
         return(
             <div className="parent-div">
                 <div className="vert-align">
-                    <p className="home-text">Home Loan Wizard</p> <br />
-                    <Link to="/wOne">
-                        <button>Get Started</button>
+                    <h1 className="home-text">Home Loan Wizard</h1> <br />
+                    <Link to="/wOne" >
+                        <button className="home-btn">Get Started</button>
                     </Link>
                 </div>
             </div>
