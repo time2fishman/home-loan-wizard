@@ -2,10 +2,173 @@
 
 # Home Loan Design Wizard
 ### Project Requirements
+#### Version 1.4
+
+## Introduction
+
+### Purpose
 
 <details>
-##Stakeholders
-stuff
+  The purpose of the Home Loan Wizard is to generate leads for the appropriate parties in the real estate market.  It will gather information about prospective customers, including contact ingormation, and route appropriately.
+</details>
+
+### Scope
+
+<details>
+  The scope of the project is to create a gated form that will ask appropriate and applicable questions and then a back end that will send the lead to the designated parties.
+</details>
+
+## Description
+
+### Interfaces
+
+<details>
+  An interface will need to be created to communicate between the form and the lenders' own systems, with all the information provided by the customer as well as a tag indicating the department for whom the report is intended.
+</details>
+
+### Environment
+
+<details>
+  The form is a web application that should also function completely in a mobile browser.  The latest versions (as of 10/5/17) of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
+</details>
+
+### User Characteristics
+
+<details>
+  The typical user of this web form is expected to be an individual without much tech savvy, so the user interface should be very simple.
+
+  As for the user on the lenders' side, they will have lots of technical acumen, and the interface need only be developed to the standards they provided, sending the information they requested in the format provided.  They will take care of the rest.
+</details>
+
+## Requirements
+
+### External Interfaces
+
+<details>
+  The interface with the lenders' system should create an XML document that will be sent to an IP address and port that will be provided later.  However, the information should be in the following format:
+
+  ```xml
+    <customer>
+      <name>Jane Doe</name>
+      <email>jane.doe@gmail.com</email>
+      <loan>Refinance</loan>
+      <property>Town Home</property>
+      <city>New York City, New York</city>
+      <type>Secondary Home</type>
+      <found>False</found>
+      <agent>True</agent>
+      <price>$500,000</price>
+      <down>$100,000</down>
+      <credit>Excellent</credit>
+      <bankruptcy>True</credit>
+      <foreclosure>False</credit>
+      <address-1>341 S Main St</address-1>
+      <address-2>Ste 100</address-2>
+      <address-3>Salt Lake City, UT 84005</address-3>
+    </customer>
+  ```
+</details>
+
+### Functions
+
+<details>
+  The form will be broken into several screens for ease of use.
+  1. The welcome screen
+    * This screen will have the name of the wizard and a button to start the process of generating the lead.
+  2. Loan and property type query screen
+    * This screen will require a description of the type of loan requested, as well as the type of property the loan will service.
+    * Acceptable values for type of home loan include:
+      * Home Purchase
+      * Refinance
+      * Home Equity Loan/Line of Credit
+    * Acceptable values for type of property include:
+      * Single Family Home
+      * Town Home
+      * Condo
+      * Multi Family Dwelling
+      * Mobile Home
+  3. Property location screen
+    * This screen will request from the user the city in which their desired property is located.
+  4. Property purchase screen
+    * This screen will discover how the property will be utilized by the customer
+    * Acceptable values include:
+      * Primary Home
+      * Rental Property
+      * Secondary Home
+  5. Property discovered screen
+    * This screen will inquire as to whether the user has already found the property the loan will service.
+  6. Agent discovered screen
+    * This screen will inquire as to whether the user has a real estate agent with whom they are working.
+  7. Price estimation screen
+    * This screen will require an estimate for both the purchase price and available down payment amount.
+    * Acceptable values include any numeric amount for both data points.
+  8. Credit score estimation
+    * This screen will request an estimate of the user's credit score.
+    * Acceptable values include:
+      * Excellent
+      * Good
+      * Fair
+      * Poor
+  9. Bankruptcy / foreclosure info request screen
+    * This screen will request the user's bankruptcy and foreclosure history in the last 7 years.
+    * Acceptable responses include:
+      * No
+      * Bankruptcy
+      * Foreclosure
+      * Both
+  10. Current address request screen
+    * This screen is to check the user's current address
+    * Acceptable responses are three lines of free text entry
+  11. User information request screen
+    * This screen will get contact information from the user
+    * Acceptable responses include:
+      * First Name - free text entry
+      * Last Name - free text entry
+      * email - free text entry
+  12. Summary screen
+    * This screen will show the user an overview of the information provided, and will allow them to submit the report, or to star the form over.
+
+  Once the submit button is selected, the form will be sent to the lenders' server for appropriate distribution within their systems.
+</details>
+
+### Performance Requirements
+
+<details>
+  The page should load in no longer than 10 seconds, and page transitions should take no longer th an 5 seconds, with 5 and 2 being the targeted thresholds respectively.
+</details>
+
+## Project Stakeholders
+
+### Development
+
+<details>
+
+  ## Test
+
+  Development Manager: Bob
+  Developer: Jack
+  Developer: Diane
+</details>
+
+### Design
+
+<details>
+  Designer: Jackie
+</details>
+
+### Quality Assurance
+
+<details>
+  Team lead: Anne
+  Analyst: Frank
+</details>
+
+### Industry Partners
+
+<details>
+  Lender: Mac
+  Underwriter: Millie
+  Agent: Marlene
 </details>
 
 
