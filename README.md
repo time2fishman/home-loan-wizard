@@ -74,7 +74,7 @@
 ### Functions
 
 <details>
-  <summary>The form will be broken into several screens for ease of use.<summary>
+  <summary>The form will be broken into several screens for ease of use.</summary>
 
   1. The welcome screen
     * This screen will have the name of the wizard and a button to start the process of generating the lead.
@@ -145,7 +145,7 @@
 ### Development
 
 <details>
-  <summary>Team members</summary>
+  <summary>__Team members__</summary>
 
   Development Manager: Bob
 
@@ -157,12 +157,16 @@
 ### Design
 
 <details>
+<summary>__Team members__</summary>
+
   Designer: Jackie
 </details>
 
 ### Quality Assurance
 
 <details>
+<summary>__Team members__</summary>
+
   Team lead: Anne
   Analyst: Frank
 </details>
@@ -170,6 +174,8 @@
 ### Industry Partners
 
 <details>
+<summary>__Partners__</summary>
+
   Lender: Mac
   Underwriter: Millie
   Agent: Marlene
