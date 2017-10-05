@@ -146,7 +146,7 @@
 
 <details>
   <summary>
-  __Team members__
+  Team members
   </summary>
 
   Development Manager: Bob
@@ -159,7 +159,7 @@
 ### Design
 
 <details>
-<summary>__Team members__</summary>
+<summary>Team members</summary>
 
   Designer: Jackie
 </details>
@@ -167,7 +167,7 @@
 ### Quality Assurance
 
 <details>
-<summary>__Team members__</summary>
+<summary>Team members</summary>
 
   Team lead: Anne
   Analyst: Frank
@@ -176,7 +176,7 @@
 ### Industry Partners
 
 <details>
-<summary>__Partners__</summary>
+<summary>Partners</summary>
 
   Lender: Mac
   Underwriter: Millie
