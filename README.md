@@ -9,7 +9,9 @@
 ### Purpose
 
 <details>
+
   The purpose of the Home Loan Wizard is to generate leads for the appropriate parties in the real estate market.  It will gather information about prospective customers, including contact ingormation, and route appropriately.
+
 </details>
 
 ### Scope
