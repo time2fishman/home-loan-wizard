@@ -145,7 +145,11 @@
 ### Development
 
 <details>
-  <summary>__Team members__</summary>
+  <summary>
+  
+  __Team members__
+  
+  </summary>
 
   Development Manager: Bob
 
