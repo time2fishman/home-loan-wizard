@@ -31,7 +31,7 @@
 ### Environment
 
 <details>
-  <summary>The form is a web application...</summary> that should also function completely in a mobile browser.  The latest versions (as of 10/5/17) of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
+  <summary>The form is a web application...</summary> that should also function completely in a mobile browser.  The latest versions of Chrome, Firefox, Microsoft Edge, and Safari will be supported.
 </details>
 
 ### User Characteristics
@@ -66,9 +66,12 @@
       <foreclosure>False</credit>
       <address-1>341 S Main St</address-1>
       <address-2>Ste 100</address-2>
-      <address-3>Salt Lake City, UT 84005</address-3>
+      <address-3>Salt Lake City, UT 84111</address-3>
     </customer>
   ```
+
+  The generation of this XML will be worked on AFTER the form's functionality has been checked and verified.
+
 </details>
 
 ### Functions
@@ -104,7 +107,11 @@
     * This screen will inquire as to whether the user has a real estate agent with whom they are working.
   7. Price estimation screen
     * This screen will require an estimate for both the purchase price and available down payment amount.
-    * Acceptable values include any numeric amount for both data points.
+    * Acceptable values include any dollar formatted amount for both data points.
+       * $1000.00
+       * 1000.00
+       * $1000
+       * 1000
   8. Credit score estimation
     * This screen will request an estimate of the user's credit score.
     * Acceptable values include:
@@ -121,13 +128,14 @@
       * Both
   10. Current address request screen
     * This screen is to check the user's current address
-    * Acceptable responses are three lines of free text entry
+    * The response should be first line: street address, second line: street address cont'd, third line: city, state, and zip.
   11. User information request screen
     * This screen will get contact information from the user
     * Acceptable responses include:
       * First Name - free text entry
       * Last Name - free text entry
-      * email - free text entry
+      * email - verified email entry
+        * x@x.x where 'x' can be any number of letters/numbers
   12. Summary screen
     * This screen will show the user an overview of the information provided, and will allow them to submit the report, or to star the form over.
 
@@ -137,7 +145,7 @@
 ### Performance Requirements
 
 <details>
-  <summary>The page should load...</summary> in no longer than 10 seconds, and page transitions should take no longer th an 5 seconds, with 5 and 2 being the targeted thresholds respectively.
+  <summary>The page should load...</summary> in no longer than 3 seconds, and page transitions should take no longer th an 2 seconds, with 1 and 2 being the target and minimum thresholds respectively.
 </details>
 
 ## Project Stakeholders
@@ -190,7 +198,7 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 
 ## Copyright
 
-© DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
+© DevMountain LLC, 2018. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
 <p align="center">
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
