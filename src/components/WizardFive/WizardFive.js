@@ -10,10 +10,10 @@ class WizardFive extends Component {
             <div className="parent-div">
                 <div className="vert-align">
 
-                    <p>Are you currently working with a real estate agent?</p> <br />
+                    <p name="promptText">Are you currently working with a real estate agent?</p> <br />
                     <div className="row">
-                        <Link to="/wSix"><button onClick={ (e)=>this.props.updateRealEstateAgent("True") }>Yes</button></Link>
-                        <Link to="/wSix"><button onClick={ (e)=>this.props.updateRealEstateAgent("False") }>No </button></Link>
+                        <Link to="/wSix"><button name="yesButton" onClick={ (e)=>this.props.updateRealEstateAgent("True") }>Yes</button></Link>
+                        <Link to="/wSix"><button name="noButton" onClick={ (e)=>this.props.updateRealEstateAgent("False") }>No </button></Link>
                     </div>
                 </div>
             </div>

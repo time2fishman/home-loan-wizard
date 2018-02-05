@@ -8,19 +8,19 @@ class WizardSix extends Component {
         return(
             <div className="parent-div">
                 <div className="vert-align">
-                    <p>What is the estimated purchase price?</p> <br />
+                    <p name="promptText1">What is the estimated purchase price?</p> <br />
                         
                         
-                        <input type="text" placeholder="amount" onChange={ (e)=> this.props.updateCost(e.target.value) }/> <br />
+                        <input type="text" name="price" placeholder="$0.00" onChange={ (e)=> this.props.updateCost(e.target.value) }/> <br />
 
 
-                    <p>How much are you putting down as a down payment?</p> <br />
+                    <p name="promptText2">How much are you putting down as a down payment?</p> <br />
                         
                         
-                        <input type="text" placeholder="amount" onChange={ (e)=> this.props.updateDownPayment(e.target.value) }/>
+                        <input type="text" name="down" placeholder="$0.00" onChange={ (e)=> this.props.updateDownPayment(e.target.value) }/>
                         
                     
-                    <Link to="/wSeven"><button className="wSix-btn"> Next </button></Link>
+                    <Link to="/wSeven"><button name="nextButton" className="wSix-btn"> Next </button></Link>
                 </div>
             </div>
         )
