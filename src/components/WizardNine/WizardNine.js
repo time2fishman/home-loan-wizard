@@ -9,14 +9,14 @@ class WizardNine extends Component {
         return(
             <div className="parent-div">
                 <div className="vert-align">
-                    <p>What is your address?</p> <br />
+                    <p name="promptText">What is your address?</p> <br />
 
-                    <input type="text" placeholder="Line One" onChange={ (e)=>this.props.updateAddOne(e.target.value) }/>
-                    <input type="text" placeholder="Line Two" onChange={ (e)=>this.props.updateAddTwo(e.target.value) }/>
-                    <input type="text" placeholder="Line Three" onChange={ (e)=>this.props.updateAddThree(e.target.value) }/>
+                    <input type="text" id="addressOne" placeholder="Street Address" onChange={ (e)=>this.props.updateAddOne(e.target.value) }/>
+                    <input type="text" id="addressTwo" placeholder="Street Address Cont'd (Optional)" onChange={ (e)=>this.props.updateAddTwo(e.target.value) }/>
+                    <input type="text" id="addressThree" placeholder="City, ST 00000" onChange={ (e)=>this.props.updateAddThree(e.target.value) }/>
                
                 
-                    <Link to="/wTen"><button className="margin-btn"> Next </button></Link>
+                    <Link to="/wTen"><button name="nextButton" className="margin-btn"> Next </button></Link>
                 </div>
             </div>
         )

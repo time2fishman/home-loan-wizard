@@ -9,11 +9,11 @@ class WizardTwo extends Component {
             <div className="parent-div">
                 <div className="vert-align">
             
-                    <p>In what city will the property be located?</p><br />
+                    <p name="promptText">In what city will the property be located?</p><br />
                 
-                    <input placeholder="city name" type="text" onChange={(e)=>this.props.updateCity(e.target.value)}/>
+                    <input name="city" placeholder="city name" type="text" onChange={(e)=>this.props.updateCity(e.target.value)}/>
                
-                <Link to="/wThree"><button className="wTwo-btn"> Next </button></Link>
+                <Link to="/wThree"><button name="nextButton" className="wTwo-btn"> Next </button></Link>
                 </div>
             </div>
         )
